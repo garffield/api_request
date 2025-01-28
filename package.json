@@ -1,0 +1,24 @@
+{
+  "name": "api_request",
+  "version": "1.0.0",
+  "description": "Criar um portfólio de pokemons\r Descrição:\r Crie um aplicativo ao qual mostrara 10 pokemons. Deverá mostrar o Pokemon e suas características com base no resultado de uma consulta na api https://pokeapi.co/api/v2/\r Tarefas:\r Ao carregar a pagina, deve-se criar um loading para esperar a realização da consulta\r Criar uma função para poder realizar a requisição na api\r Ao receber a resposta da api, devera criar um objeto de uma classe Pokemon ao qual ira preencher as informações dos pokemons em seus atributos da classe\r Após criar o objeto do pokemon, devera criar uma div contendo a imagem e as informações do pokemon",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garffield/api_request.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/garffield/api_request/issues"
+  },
+  "homepage": "https://github.com/garffield/api_request#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

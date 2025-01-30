@@ -35,13 +35,12 @@ async function apiCall() {
       pokeList += `<div class="cardPokemon">
                     <img src="${e.imageP}" alt="${e.name}">
                     <p>Nome: ${e.name}</p>
-                    <p>Tipo: ${e.type}</p>
+                    <p>Tipo: <span id="bgType">${e.type}</span></p>
                     <p>Base Experience: ${e.baseExperience}</p>
                     <p>Peso: ${e.weight}</p>
                     <p>Altura: ${e.height}</p>
                     </div>
                   `
-
     });
 
     result.innerHTML = pokeList ;
@@ -52,5 +51,3 @@ async function apiCall() {
     console.error(`Erro Gerado: ${error}`)
   }
 }
-
-apiCall()

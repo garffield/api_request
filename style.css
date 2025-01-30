@@ -1,3 +1,11 @@
+:root {
+    --poison: #b97fc9;
+    --grass: #9bcc50;
+    --fire: #fd7d24;
+    --water: #4592c4;
+    --normal: #a4acaf;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,10 +13,42 @@
     box-sizing: none;
 }
 
+body {
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 8%, rgba(69,154,252,1) 92%);
+}
+
 .cardPokemon img{
    background: #F2F2F2;
    
 }
 .cardPokemon {
-    width: 50px;
+    height: fit-content;
+    color: white;
+    border: 2px solid white;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pokeList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+}
+
+#pokeList .button {
+    position: absolute;
+    top: 25%;
+
+    & button{
+        font-size: 1.6rem;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background: white;
+     }
 }
